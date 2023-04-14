@@ -19,18 +19,20 @@
 
 - Метод [`task4()`](https://github.com/SergeiSlobodchikov/ExceptionsInProgramming/blob/8a28601dddcd8b7c0c62e4d381b2d77121da3f30/HomeWork2.java#L114) запрашивает у пользователя ввод строки и проверяет ее на пустоту. Если строка пустая, то выбрасывается исключение Exception с сообщением "Пустые строки вводить нельзя". Если исключение было выброшено, выводится сообщение с текстом исключения.
 ---
-### Класс [HomeWork3]() представляет собой консольную программу ввода данных в файл .txt
+### Класс [HomeWork3](https://github.com/SergeiSlobodchikov/ExceptionsInProgramming/blob/Seminar3/HomeWork3.java) представляет собой консольную программу ввода данных в файл .txt
 `Пользователю предлагается ввести данные в формате: Фамилия Имя Отчество дата_рождения номер_телефона пол. Программа разбивает введенные данные на составляющие и проверяет их на корректность, а затем записывает данные в файл.`
-- Метод [`main`]() запрашивает у пользователя ввод данных и передает их в метод parseUserData. Если данные корректны, программа выводит сообщение "Данные корректны". Если в данных есть ошибка, программа ловит исключение и выводит соответствующее сообщение.
+- Метод [`main`](https://github.com/SergeiSlobodchikov/ExceptionsInProgramming/blob/ba268b8aaeeb0266836a050cb2ab189ee16957fb/HomeWork3.java#L7) запрашивает у пользователя ввод данных и передает их в метод parseUserData. Если данные корректны, программа выводит сообщение "Данные корректны". Если в данных есть ошибка, программа ловит исключение и выводит соответствующее сообщение.
 
-- Метод [`parseUserData`]() разбивает входную строку на составляющие и проверяет их на корректность с помощью других методов. Если данные корректны, метод вызывает метод writeToFile, который записывает данные в файл.
+- Метод [`parseUserData`](https://github.com/SergeiSlobodchikov/ExceptionsInProgramming/blob/ba268b8aaeeb0266836a050cb2ab189ee16957fb/HomeWork3.java#L26) разбивает входную строку на составляющие и проверяет их на корректность с помощью других методов. Если данные корректны, метод вызывает метод writeToFile, который записывает данные в файл.
 
-- Метод [`splitData`]() разбивает входную строку на составляющие и возвращает массив строк.
+- Метод [`splitData`](https://github.com/SergeiSlobodchikov/ExceptionsInProgramming/blob/ba268b8aaeeb0266836a050cb2ab189ee16957fb/HomeWork3.java#L41) разбивает входную строку на составляющие и возвращает массив строк.
 
-- Метод [`checkDataLength`]() проверяет, что количество составляющих данных равно 6. Если количество данных неверное, метод бросает исключение InvalidDataLengthException.
+- Метод [`checkDataLength`](https://github.com/SergeiSlobodchikov/ExceptionsInProgramming/blob/ba268b8aaeeb0266836a050cb2ab189ee16957fb/HomeWork3.java#L45) проверяет, что количество составляющих данных равно 6. Если количество данных неверное, метод бросает исключение InvalidDataLengthException.
 
-- Метод [`checkDateOfBirthFormat`]() проверяет корректность формата даты рождения. Если формат неверный, метод бросает исключение InvalidDataFormatException.
+- Метод [`checkDateOfBirthFormat`](https://github.com/SergeiSlobodchikov/ExceptionsInProgramming/blob/ba268b8aaeeb0266836a050cb2ab189ee16957fb/HomeWork3.java#L51) проверяет корректность формата даты рождения. Если формат неверный, метод бросает исключение InvalidDataFormatException.
 
-- Метод [`checkPhoneNumberFormat`]() проверяет корректность формата номера телефона. Если формат неверный, метод бросает исключение InvalidDataFormatException.
+- Метод [`checkPhoneNumberFormat`](https://github.com/SergeiSlobodchikov/ExceptionsInProgramming/blob/ba268b8aaeeb0266836a050cb2ab189ee16957fb/HomeWork3.java#L57) проверяет корректность формата номера телефона. Если формат неверный, метод бросает исключение InvalidDataFormatException.
 
-- Метод [`writeToFile`]() записывает данные в файл. Если файл не существует, он создается. Если файл существует, новые данные добавляются в конец файла.
+- Метод [`checkGenderFormat`](https://github.com/SergeiSlobodchikov/ExceptionsInProgramming/blob/ba268b8aaeeb0266836a050cb2ab189ee16957fb/HomeWork3.java#L65) проверяет корректность пола человека. Если формат неверный, метод бросает исключение InvalidDataFormatException.
+
+- Метод [`writeToFile`](https://github.com/SergeiSlobodchikov/ExceptionsInProgramming/blob/ba268b8aaeeb0266836a050cb2ab189ee16957fb/HomeWork3.java#L71) записывает данные в файл. Если файл не существует, он создается. Если файл существует, новые данные добавляются в конец файла.
